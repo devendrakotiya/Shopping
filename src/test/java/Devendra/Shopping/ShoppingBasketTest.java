@@ -15,14 +15,14 @@ public class ShoppingBasketTest {
     
 	@Test
 	public void Only_apples_in_the_basket() {
-    List<String> basket2 = List.of("Apple", "Apple", "Apple");
+    List<String> basket2 = List.of("Banana", "Banana", "Banana", "Banana", "Banana", "Banana", "Banana", "Banana", "Banana", "Banana", "Banana", "Banana");
     System.out.println("Test 2 - Total cost: " + ShoppingBasket.calculateTotalCost(basket2) + "p"); 
 	}
 	
     
 	@Test
 	public void Only_bananas_in_the_basket() {
-    List<String> basket3 = List.of("Banana", "Banana");
+    List<String> basket3 = List.of("Banana", "Banana", "Banana", "Banana");
     System.out.println("Test 3 - Total cost: " + ShoppingBasket.calculateTotalCost(basket3) + "p"); 
 	}
 	

@@ -20,6 +20,8 @@ public class ShoppingBasket {
 	            itemCounts.put(item, itemCounts.getOrDefault(item, 0) + 1);
 	        }
 	        
+//	        aspple = 1+1
+	        
 	        // Initialize total cost
 	        int totalCost = 0;
 	        
@@ -30,7 +32,10 @@ public class ShoppingBasket {
 	            if (item.equals("Apple")) {
 	                totalCost += count * APPLE_PRICE;
 	            } else if (item.equals("Banana")) {
-	                totalCost += count * BANANA_PRICE;
+//	            	buy 6 get 12 
+//	            	6*20 = 120
+	            	totalCost = totalCost + (count/12)*6*BANANA_PRICE + (count%12)*BANANA_PRICE;
+//	                totalCost += count * BANANA_PRICE;
 	            } else if (item.equals("Melon")) {
 	                // Melons: Buy one get one free offer
 	                totalCost += (count / 2 + count % 2) * MELON_PRICE; // Pay for half (rounded up)
